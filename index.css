@@ -41,7 +41,12 @@ body {
   flex-direction: column;
   gap: 0.25em;
 }
-
+.section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1ex;
+  justify-content: space-between;
+}
 .group-control {
   /* max-width: 500px; */
 
@@ -52,22 +57,21 @@ body {
 }
 
 .volume-group-control {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(1em, 5em) auto;
   gap: 1em;
   height: 10vh;
 }
 
 .volume-icon {
   font-size: 4ex;
-  flex-grow: 0;
-  background-color: #7c666c;
+  background-color: #7c666c43;
   border-radius: 0.5ex;
   display: grid;
   place-items: center;
   justify-content: center;
 }
 .volume-range {
-  flex: 1;
   display: grid;
   grid-auto-rows: 1fr;
   align-items: center;
